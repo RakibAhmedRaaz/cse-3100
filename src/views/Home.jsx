@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
 const featuredCats = [
-  { name: 'Whiskers', age: '2' },
-  { name: 'Mittens', age: '2' },
-  { name: 'Shadow', age: '1' },
-];
+  { name: 'Whiskers', age: '2', Breed: 'Sphynx'},
+  { name: 'Mittens', age: '2', Breed: 'Birman' },
+  { name: 'Shadow', age: '1', Breed: 'Abyssinian'},
+]; 
 
 export default function Home() {
   const [cats, setCats] = useState([]);
@@ -48,7 +48,8 @@ export default function Home() {
                 <img src={cat.image} alt={cat.name} className="img-fluid mb-2" style={{ borderRadius: '8px', height: '200px', objectFit: 'cover' }} />
                 <div className="cat-info">
                   <h3 className="h5 mb-1">{cat.name}</h3>
-                  <p className="mb-0">Age: {cat.age}</p>
+                  <p className="mb-0">Age: {cat.age}</p> 
+                  <p className="mb-0">Breed: {cat.Breed}</p> 
                 </div>
               </div>
             </div>

@@ -24,10 +24,10 @@ const BaseLayout = () => {
         <Outlet />
       </main>
       <footer className="bg-light">
-        <p>© Copyright 2024</p>
+      <p>© Copyright 2024 | <a href="/contact-us">Contact Us</a> | <a href="/about-us">About us</a></p>
       </footer>
     </div>
   );
 };
 
-export default BaseLayout;
+export default BaseLayout; 
